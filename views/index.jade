@@ -1,13 +1,21 @@
 extends layout
 
-block head
-
 block content
-  h1= title
-  p Welcome to #{title}
-  form#form
-    div(class='form-group col-md-3')
-      input(id='user', type='email', placeholder='Enter email', class='form-control')
-      input(id='password', type='password', placeholder='Enter password', class='form-control')
-      input(id='access', type='reset', value='Clear' class='col-md-4 btn')
-      input(id='access', type='button', value='Access' class='col-md-4 btn btn-primary')
+    h1= title
+    p Welcome BrokerServer
+
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th Username
+                    th Email
+                    th Delete?
+                tbody
+        // /USER LIST
+
+    // /WRAPPER
